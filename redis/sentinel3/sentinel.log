@@ -1,0 +1,77 @@
+1:X 29 Nov 2022 14:29:42.135 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:X 29 Nov 2022 14:29:42.135 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:X 29 Nov 2022 14:29:42.135 # Configuration loaded
+1:X 29 Nov 2022 14:29:42.136 * monotonic clock: POSIX clock_gettime
+1:X 29 Nov 2022 14:29:42.136 * Running mode=sentinel, port=26379.
+1:X 29 Nov 2022 14:29:42.148 # Sentinel ID is 9bfa97d778bb4f76b26c948a98b0c07e5c1eee07
+1:X 29 Nov 2022 14:29:42.148 # +monitor master mymaster 43.142.237.21 6379 quorum 2
+1:X 29 Nov 2022 14:29:42.156 * +slave slave 43.142.237.21:6380 43.142.237.21 6380 @ mymaster 43.142.237.21 6379
+1:X 29 Nov 2022 14:29:42.162 * +slave slave 43.142.237.21:6381 43.142.237.21 6381 @ mymaster 43.142.237.21 6379
+1:X 29 Nov 2022 14:31:25.842 * +sentinel sentinel 558f96bc80946e6aede501dbaad9f4f63dca321c 43.142.237.21 6379 @ mymaster 43.142.237.21 6379
+1:X 29 Nov 2022 14:31:27.198 * +sentinel-invalid-addr sentinel 558f96bc80946e6aede501dbaad9f4f63dca321c 43.142.237.21 6379 @ mymaster 43.142.237.21 6379
+1:X 29 Nov 2022 14:31:27.198 * +sentinel sentinel f0140251d87bcd096f55117b12aeca9889ed575f 43.142.237.21 6379 @ mymaster 43.142.237.21 6379
+1:X 29 Nov 2022 14:31:27.907 * +sentinel-address-switch master mymaster 43.142.237.21 6379 ip 43.142.237.21 port 6379 for 558f96bc80946e6aede501dbaad9f4f63dca321c
+1:X 29 Nov 2022 14:31:30.222 # +sdown sentinel f0140251d87bcd096f55117b12aeca9889ed575f 43.142.237.21 6379 @ mymaster 43.142.237.21 6379
+1:X 29 Nov 2022 14:31:30.924 # +sdown sentinel 558f96bc80946e6aede501dbaad9f4f63dca321c 43.142.237.21 6379 @ mymaster 43.142.237.21 6379
+1:X 29 Nov 2022 14:32:26.909 # +sdown master mymaster 43.142.237.21 6379
+1:X 29 Nov 2022 14:37:33.322 * +reboot master mymaster 43.142.237.21 6379
+1:X 29 Nov 2022 14:37:33.372 # -sdown master mymaster 43.142.237.21 6379
+1:X 29 Nov 2022 14:45:35.476 # +sdown master mymaster 43.142.237.21 6379
+1:X 29 Nov 2022 14:46:19.975 * +reboot master mymaster 43.142.237.21 6379
+1:X 29 Nov 2022 14:46:20.069 # -sdown master mymaster 43.142.237.21 6379
+1:X 29 Nov 2022 14:50:24.516 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:X 29 Nov 2022 14:50:24.516 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:X 29 Nov 2022 14:50:24.516 # Configuration loaded
+1:X 29 Nov 2022 14:50:24.516 * monotonic clock: POSIX clock_gettime
+1:X 29 Nov 2022 14:50:24.518 * Running mode=sentinel, port=26379.
+1:X 29 Nov 2022 14:50:24.532 # Sentinel ID is 12bab5ebc5ab1810c8e3edeabd99bb0d4f8520cd
+1:X 29 Nov 2022 14:50:24.532 # +monitor master mymaster 43.142.237.21 6379 quorum 2
+1:X 29 Nov 2022 14:50:24.539 * +slave slave 43.142.237.21:6380 43.142.237.21 6380 @ mymaster 43.142.237.21 6379
+1:X 29 Nov 2022 14:50:24.547 * +slave slave 43.142.237.21:6381 43.142.237.21 6381 @ mymaster 43.142.237.21 6379
+1:X 29 Nov 2022 14:50:25.681 * +sentinel sentinel 1bac26fa7598da68e62031c47e27efbe370c20fe 43.142.237.21 6379 @ mymaster 43.142.237.21 6379
+1:X 29 Nov 2022 14:50:26.140 * +sentinel-invalid-addr sentinel 1bac26fa7598da68e62031c47e27efbe370c20fe 43.142.237.21 6379 @ mymaster 43.142.237.21 6379
+1:X 29 Nov 2022 14:50:26.140 * +sentinel sentinel dc495940be6484fd16e4c99d28731a693ec4dffd 43.142.237.21 6379 @ mymaster 43.142.237.21 6379
+1:X 29 Nov 2022 14:50:27.750 * +sentinel-address-switch master mymaster 43.142.237.21 6379 ip 43.142.237.21 port 6379 for 1bac26fa7598da68e62031c47e27efbe370c20fe
+1:X 29 Nov 2022 14:50:29.164 # +sdown sentinel dc495940be6484fd16e4c99d28731a693ec4dffd 43.142.237.21 6379 @ mymaster 43.142.237.21 6379
+1:X 29 Nov 2022 14:50:30.803 # +sdown sentinel 1bac26fa7598da68e62031c47e27efbe370c20fe 43.142.237.21 6379 @ mymaster 43.142.237.21 6379
+1:X 29 Nov 2022 14:52:09.915 # +sdown master mymaster 43.142.237.21 6379
+1:X 29 Nov 2022 15:08:54.976 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:X 29 Nov 2022 15:08:54.976 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:X 29 Nov 2022 15:08:54.976 # Configuration loaded
+1:X 29 Nov 2022 15:08:54.977 * monotonic clock: POSIX clock_gettime
+1:X 29 Nov 2022 15:08:54.979 * Running mode=sentinel, port=26379.
+1:X 29 Nov 2022 15:08:54.992 # Sentinel ID is d554942e33089ef0becedf8a05f420cc1e5b4bd5
+1:X 29 Nov 2022 15:08:54.992 # +monitor master mymaster 43.142.237.21 6379 quorum 2
+1:X 29 Nov 2022 15:08:55.000 * +slave slave 43.142.237.21:6380 43.142.237.21 6380 @ mymaster 43.142.237.21 6379
+1:X 29 Nov 2022 15:08:55.008 * +slave slave 43.142.237.21:6381 43.142.237.21 6381 @ mymaster 43.142.237.21 6379
+1:X 29 Nov 2022 15:08:56.234 * +sentinel sentinel 6a3c22d34f6c65b5ca17978ae7af610e1ba57f19 43.142.237.21 26379 @ mymaster 43.142.237.21 6379
+1:X 29 Nov 2022 15:08:56.600 * +sentinel sentinel 49f0f8e837cacdf2641b2dd1f6d68e2db5a4eeb6 43.142.237.21 26380 @ mymaster 43.142.237.21 6379
+1:X 29 Nov 2022 15:09:09.252 # +new-epoch 1
+1:X 29 Nov 2022 15:09:09.259 # +vote-for-leader 49f0f8e837cacdf2641b2dd1f6d68e2db5a4eeb6 1
+1:X 29 Nov 2022 15:09:09.279 # +sdown master mymaster 43.142.237.21 6379
+1:X 29 Nov 2022 15:09:09.380 # +odown master mymaster 43.142.237.21 6379 #quorum 3/2
+1:X 29 Nov 2022 15:09:09.380 # Next failover delay: I will not start a failover before Tue Nov 29 15:09:27 2022
+1:X 29 Nov 2022 15:09:10.346 # +config-update-from sentinel 49f0f8e837cacdf2641b2dd1f6d68e2db5a4eeb6 43.142.237.21 26380 @ mymaster 43.142.237.21 6379
+1:X 29 Nov 2022 15:09:10.346 # +switch-master mymaster 43.142.237.21 6379 43.142.237.21 6381
+1:X 29 Nov 2022 15:09:10.346 * +slave slave 43.142.237.21:6380 43.142.237.21 6380 @ mymaster 43.142.237.21 6381
+1:X 29 Nov 2022 15:09:10.347 * +slave slave 43.142.237.21:6379 43.142.237.21 6379 @ mymaster 43.142.237.21 6381
+1:X 29 Nov 2022 15:09:13.391 # +sdown slave 43.142.237.21:6379 43.142.237.21 6379 @ mymaster 43.142.237.21 6381
+1:X 29 Nov 2022 15:11:53.657 # -sdown slave 43.142.237.21:6379 43.142.237.21 6379 @ mymaster 43.142.237.21 6381
+1:X 29 Nov 2022 15:18:56.085 * +reboot slave 43.142.237.21:6379 43.142.237.21 6379 @ mymaster 43.142.237.21 6381
+1:X 29 Nov 2022 15:25:47.117 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:X 29 Nov 2022 15:25:47.117 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:X 29 Nov 2022 15:25:47.117 # Configuration loaded
+1:X 29 Nov 2022 15:25:47.118 * monotonic clock: POSIX clock_gettime
+1:X 29 Nov 2022 15:25:47.119 * Running mode=sentinel, port=26379.
+1:X 29 Nov 2022 15:25:47.119 # Sentinel ID is d554942e33089ef0becedf8a05f420cc1e5b4bd5
+1:X 29 Nov 2022 15:25:47.119 # +monitor master mymaster 43.142.237.21 6381 quorum 2
+1:X 29 Nov 2022 15:26:09.856 # +new-epoch 2
+1:X 29 Nov 2022 15:26:09.864 # +vote-for-leader 49f0f8e837cacdf2641b2dd1f6d68e2db5a4eeb6 2
+1:X 29 Nov 2022 15:26:10.186 # +sdown master mymaster 43.142.237.21 6381
+1:X 29 Nov 2022 15:26:10.288 # +odown master mymaster 43.142.237.21 6381 #quorum 3/2
+1:X 29 Nov 2022 15:26:10.288 # Next failover delay: I will not start a failover before Tue Nov 29 15:26:28 2022
+1:X 29 Nov 2022 15:26:10.929 # +config-update-from sentinel 49f0f8e837cacdf2641b2dd1f6d68e2db5a4eeb6 43.142.237.21 26380 @ mymaster 43.142.237.21 6381
+1:X 29 Nov 2022 15:26:10.929 # +switch-master mymaster 43.142.237.21 6381 43.142.237.21 6380
+1:X 29 Nov 2022 15:26:10.929 * +slave slave 43.142.237.21:6379 43.142.237.21 6379 @ mymaster 43.142.237.21 6380
+1:X 29 Nov 2022 15:26:10.929 * +slave slave 43.142.237.21:6381 43.142.237.21 6381 @ mymaster 43.142.237.21 6380
+1:X 29 Nov 2022 15:26:20.981 * +fix-slave-config slave 43.142.237.21:6381 43.142.237.21 6381 @ mymaster 43.142.237.21 6380

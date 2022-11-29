@@ -1,0 +1,20 @@
+# 让服务后台运行(因为使用docker启动时使用了-d参数，所以需要设置为no, 非docker设置为yes)
+daemonize no
+
+# docker对外开放的端口
+port 26379
+
+# 这里配置的是监控的redis的地址，mymaster为默认的主节点名字，后面的2为客观掉线的票数，一般为集群数除二
+sentinel monitor mymaster 43.142.237.21 6379 2
+sentinel auth-pass mymaster mima
+logfile "/var/log/sentinel.log"
+# 超过5秒master还没有连接上，则认为master已经停止，5000ms
+sentinel down-after-milliseconds mymaster 500
+
+# 故障转移超时时间
+sentinel failover-timeout mymaster 600
+# 这两个参数可以强制slave向master声明任意IP和端口对，docker内部网络与外部不同
+# 基于docker所构建的redis集群在docker容器内是能够访问的，但是在容器外或者两个无关联的容器间，是无法访问的
+# 使用这两个参数后，从节点发送给主节点的ip和端口信息就是在这里设定好了。
+sentinel announce-ip  43.142.237.21
+sentinel announce-port 6379
